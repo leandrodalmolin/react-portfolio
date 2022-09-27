@@ -1,7 +1,21 @@
+import { useState } from 'react';
+import { ImageLink } from './components/ImageLink';
+
+import workImg1 from './assets/images/work/w-1.jpg';
+import workImg2 from './assets/images/work/w-2.jpg';
+import workImg3 from './assets/images/work/w-3.jpg';
+import workImg4 from './assets/images/work/w-4.jpg';
+
 function App() {
+  const [bgColorClass, setBgColorClass] = useState('bg-zinc-100');
+
+  const bgColorHandler = (bgColor) => {
+    setBgColorClass(bgColor);
+  };
+
   return (
     <>
-      <header className="fixed w-full">
+      {/* <header className="fixed w-full z-10">
         <nav className="flex justify-between max-w-7xl mx-auto p-5">
           <div className="flex items-center justify-center w-10 h-10 bg-white text-zinc-700">
             ld.
@@ -14,10 +28,10 @@ function App() {
             <li>Contact</li>
           </ul>
         </nav>
-      </header>
+      </header> */}
 
       <section className="relative w-full h-screen flex items-center justify-center">
-        <div className="max-w-3xl text-center">
+        <div className="max-w-3xl mx-10 text-center">
           <h1 className="text-5xl text-white font-bold mb-8">Hi, I'm Leandro!</h1>
           <p className="text-3xl">A web developer with experience building websites for local businesses and golf clubs throughout the UK.</p>
         </div>
@@ -30,17 +44,59 @@ function App() {
         </div>
       </section>
 
-      <section id="selected-work" className="bg-zinc-100">
-        <div className="max-w-7xl mx-auto py-28 px-5">
-          <div className="mb-14 text-center">
-            <p className="mb-1 text-xs uppercase font-medium">© Artworking/Golfworking</p>
-            <h2 className="text-zinc-800 text-5xl font-bold">Selected Work</h2>
+      <section id="selected-work" className={`transition-colors duration-500 ${bgColorClass}`}>
+        <div className="max-w-7xl mx-auto py-32 px-5 text-center">
+          <p className="mb-1 text-xs uppercase font-medium">© Artworking/Golfworking</p>
+          <h2 className="text-zinc-800 inverse-active:text-white text-5xl font-bold transition-colors duration-500">Selected Work</h2>
+        </div>
+
+        <div className="flex flex-col mx-11">
+          <div
+            className="w-8/12 hover:scale-[1.01] transition-transform duration-500 self-end mb-40"
+            onMouseEnter={bgColorHandler.bind(this, 'bg-[#111b36] inverse')}
+            onMouseLeave={bgColorHandler.bind(this, 'bg-zinc-100')}
+          >
+            <ImageLink
+              title="Royal Lytham & St Annes Golf Club"
+              url="https://www.royallytham.org/"
+              image={workImg1}
+            />
           </div>
-          <div className="grid grid-cols-2 gap-5">
-            <div className="h-52 bg-zinc-400"></div>
-            <div className="h-52 bg-zinc-400"></div>
-            <div className="h-52 bg-zinc-400"></div>
-            <div className="h-52 bg-zinc-400"></div>
+          
+          <div
+            className="w-8/12 hover:scale-[1.01] transition-transform duration-500 self-start mb-40"
+            onMouseEnter={bgColorHandler.bind(this, 'bg-[#98002e] inverse')}
+            onMouseLeave={bgColorHandler.bind(this, 'bg-zinc-100')}
+          >
+            <ImageLink
+              title="Hot Sauce Emporium"
+              url="https://www.hotsauceemporium.co.uk/"
+              image={workImg2}
+            />
+          </div>
+
+          <div
+            className="w-8/12 hover:scale-[1.01] transition-transform duration-500 self-end mb-40"
+            onMouseEnter={bgColorHandler.bind(this, 'bg-[#2f3543] inverse')}
+            onMouseLeave={bgColorHandler.bind(this, 'bg-zinc-100')}
+          >
+            <ImageLink
+              title="Royal St.David's Golf Club"
+              url="https://www.royalstdavids.co.uk/"
+              image={workImg3}
+            />
+          </div>
+
+          <div
+            className="w-8/12 hover:scale-[1.01] transition-transform duration-500 self-start mb-28"
+            onMouseEnter={bgColorHandler.bind(this, 'bg-[#29452A] inverse')}
+            onMouseLeave={bgColorHandler.bind(this, 'bg-zinc-100')}
+          >
+            <ImageLink
+              title="Congo Falls"
+              url="https://www.congofalls.co.uk/"
+              image={workImg4}
+            />
           </div>
         </div>
       </section>
