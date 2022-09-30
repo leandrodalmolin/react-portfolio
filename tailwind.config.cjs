@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['"DM Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+      'serif': ['"Libre Baskerville"', 'Georgia', 'serif']
+    }
   },
   plugins: [
     plugin(function({ addVariant }) {
