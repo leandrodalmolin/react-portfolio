@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Article, GithubLogo, LinkedinLogo, Envelope } from 'phosphor-react';
+import { FaCss3Alt, FaEnvelope, FaFileAlt, FaGithub, FaHtml5, FaJsSquare, FaLinkedin, FaPhp, FaSass, FaWordpress, FaWordpressSimple } from "react-icons/fa";
 import { ImageLink } from './components/ImageLink';
 
 import workImg1 from './assets/images/work/w-1.jpg';
@@ -35,7 +35,7 @@ function App() {
       <section className="relative w-full h-screen flex items-center justify-center">
         <div className="max-w-3xl mx-5 text-center">
           <h1 className="text-3xl text-white font-bold mb-5 font-serif sm:text-4xl sm:mb-8">Hi, I'm Leandro!</h1>
-          <p className="text-xl sm:text-2xl">A web developer with experience building websites for local businesses and golf clubs throughout the UK.</p>
+          <p className="text-xl sm:text-3xl">A web developer focused on creating interactive digital experiences on the web.</p>
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 mx-auto text-center">
@@ -104,53 +104,96 @@ function App() {
       </section>
 
       <section>
-        <div className="max-w-3xl mx-auto py-20 md:py-28 px-5">
+        <div className="max-w-4xl mx-auto py-20 md:py-28 px-5">
+          <div className="mb-14 text-center">
+            <p className="mb-3 text-xs uppercase font-medium">Pinned from GitHub</p>
+            <h2 className="text-4xl text-white font-serif font-bold sm:text-5xl">Side Projects</h2>
+          </div>
+          <div className="flex gap-10">
+            <div className="flex-1 h-40 bg-zinc-100"></div>
+            <div className="flex-1 h-40 bg-zinc-100"></div>
+            <div className="flex-1 h-40 bg-zinc-100"></div>
+            <div className="flex-1 h-40 bg-zinc-100"></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 px-5 bg-zinc-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="mb-3 text-xs uppercase font-medium">Technologies I Use</p>
+          <h2 className="text-4xl text-zinc-800 font-serif font-bold sm:text-5xl">Skill Set</h2>
+          <ul className="flex flex-wrap justify-center mt-20 gap-16 text-zinc-700">
+            <li>
+              <FaPhp className="w-24 h-20" />
+            </li>
+            <li>
+              <FaWordpress className="w-20 h-20" />
+            </li>
+            <li>
+              <FaJsSquare className="w-20 h-20" />
+            </li>
+            <li>
+              <FaHtml5 className="w-20 h-20" />
+            </li>
+            <li>
+              <FaCss3Alt className="w-20 h-20" />
+            </li>
+            <li>
+              <FaSass className="w-20 h-20" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div className="max-w-2xl mx-auto py-20 md:py-28 px-5">
           <div className="mb-14 text-center">
             <p className="mb-3 text-xs uppercase font-medium">Who am I?</p>
             <h2 className="text-4xl text-white font-serif font-bold sm:text-5xl">About Me</h2>
           </div>
           <div className="text-center">
-            <p className="text-lg mb-4 text-zinc-300 sm:text-xl">Originally from Brazil, I arrived in Bristol in 2017 and I've been working as a Web Developer
-            at Artworking/Golfworking.</p>
-            <p className="sm:text-lg">It's a small but busy company where I've been building websites for local businesses
-            and golf clubs throughout the UK using an array of technologies like PHP (Wordpress), 
-            MySQL, Javascript, jQuery, HTML and CSS (Sass).</p>
+            <h4 className="leading-tight font-bold text-zinc-300 mb-1 sm:text-xl sm:mb-0">My name is Leandro Dal Molin.</h4>
+            <h5 className="leading-tight font-bold text-zinc-300 mb-4 sm:text-xl sm:mb-5">A full-stack developer mostly focused on the front-end.</h5>
+            <p className="sm:text-lg mb-5">My interest in web development started back in 2000 building websites on Microsoft FrontPage (I know) about my favourite bands.</p>
+            <p className="sm:text-lg">Since then, I've graduated, had the chance to work on a variety of projects (software and web) and finally moved from Brazil to England in 2017, where I've been working as a web developer building websites for local businesses and golf clubs throughout the UK at Artwroking/Golfworking.</p>
+
+            
             <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg">
-                <li>
-                  <a
-                    className="hover:text-white flex items-center gap-1 transition-colors"
-                    href={cvPdf}
-                    target="_blank"
-                  >
-                    <Article /> CV
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-white flex items-center gap-1 transition-colors"
-                    href="https://www.linkedin.com/in/leandrodalmolin/"
-                    target="_blank"
-                  >
-                    <LinkedinLogo /> LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-white flex items-center gap-1 transition-colors"
-                    href="https://www.github.com/leandrodalmolin"
-                    target="_blank"
-                  >
-                    <GithubLogo /> GitHub
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-white flex items-center gap-1 transition-colors"
-                    href="mailto:leandro.swk@hotmail.com"
-                  >
-                    <Envelope className="inline-block" /> Email
-                  </a>
-                </li>
+              <li>
+                <a
+                  className="hover:text-white flex items-center gap-2 transition-colors"
+                  href={cvPdf}
+                  target="_blank"
+                >
+                  <FaFileAlt /> CV
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-white flex items-center gap-2 transition-colors"
+                  href="https://www.linkedin.com/in/leandrodalmolin/"
+                  target="_blank"
+                >
+                  <FaLinkedin /> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-white flex items-center gap-2 transition-colors"
+                  href="https://www.github.com/leandrodalmolin"
+                  target="_blank"
+                >
+                  <FaGithub /> GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-white flex items-center gap-2 transition-colors"
+                  href="mailto:leandro.swk@hotmail.com"
+                >
+                  <FaEnvelope className="inline-block" /> Email
+                </a>
+              </li>
             </ul>
           </div>
         </div>
