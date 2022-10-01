@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { ImageLink } from '../components/ImageLink';
+import { ImageLink } from '../ui/ImageLink';
 
-import workImg1 from '../assets/images/work/w-1.jpg';
-import workImg2 from '../assets/images/work/w-2.jpg';
-import workImg3 from '../assets/images/work/w-3.jpg';
-import workImg4 from '../assets/images/work/w-4.jpg';
+import workImg1 from '../../assets/images/work/w-1.jpg';
+import workImg2 from '../../assets/images/work/w-2.jpg';
+import workImg3 from '../../assets/images/work/w-3.jpg';
+import workImg4 from '../../assets/images/work/w-4.jpg';
 
 export function Work() {
   const [bgColorClass, setBgColorClass] = useState('bg-zinc-100');
@@ -14,7 +14,7 @@ export function Work() {
   };
 
   return (
-    <section id="selected-work" className={`transition-colors duration-500 ${bgColorClass}`}>
+    <section id="work" className={`transition-colors duration-500 ${bgColorClass}`}>
       <div className="max-w-7xl mx-auto pt-32 pb-14 px-5 text-center sm:py-32">
         <p className="mb-3 text-xs uppercase font-medium sm:mb-5">© Artworking/Golfworking</p>
         <h2 className="text-zinc-800 inverse-active:text-white text-4xl font-serif font-bold leading-[1.1] transition-colors duration-500 sm:text-5xl">Selected Work</h2>

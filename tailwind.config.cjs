@@ -16,6 +16,7 @@ module.exports = {
   plugins: [
     plugin(function({ addVariant }) {
       addVariant('inverse-active', '.inverse &')
+      addVariant('navbar-scroll', ['&.navbar-scroll', '.navbar-scroll &'])
     })
   ],
 }

@@ -1,10 +1,11 @@
 import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import cvPdf from '../assets/docs/leandro-dal-molin-cv.pdf';
+import cvPdf from "../../assets/docs/leandro-dal-molin-cv.pdf";
+import { Link } from "../ui/Link";
 
 export function About() {
   return (
-    <section>
+    <section id="about">
       <div className="max-w-2xl mx-auto py-20 md:py-28 px-5">
         <div className="mb-14 text-center">
           <p className="mb-3 text-xs uppercase font-medium">Who am I?</p>
@@ -33,39 +34,39 @@ export function About() {
 
           <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg">
             <li>
-              <a
-                className="hover:text-white flex items-center gap-2 transition-colors"
+              <Link
+                className="flex items-center gap-2"
                 href={cvPdf}
                 target="_blank"
               >
                 <FaFileAlt /> CV
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="hover:text-white flex items-center gap-2 transition-colors"
+              <Link
+                className="flex items-center gap-2"
                 href="https://www.linkedin.com/in/leandrodalmolin/"
                 target="_blank"
               >
                 <FaLinkedin /> LinkedIn
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="hover:text-white flex items-center gap-2 transition-colors"
+              <Link
+                className="flex items-center gap-2"
                 href="https://www.github.com/leandrodalmolin"
                 target="_blank"
               >
                 <FaGithub /> GitHub
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="hover:text-white flex items-center gap-2 transition-colors"
+              <Link
+                className="flex items-center gap-2"
                 href="mailto:leandro.swk@hotmail.com"
               >
                 <FaEnvelope className="inline-block" /> Email
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

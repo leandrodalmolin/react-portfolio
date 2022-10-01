@@ -1,6 +1,6 @@
 export function Projects() {
   return (
-    <section>
+    <section id="projects">
       <div className="max-w-4xl mx-auto py-20 md:py-28 px-5">
         <div className="mb-14 text-center">
           <p className="mb-3 text-xs uppercase font-medium">Pinned from GitHub</p>

@@ -9,7 +9,7 @@ import {
 
 export function Tech() {
   return (
-    <section className="py-20 md:py-28 px-5 bg-zinc-100">
+    <section id="tech" className="py-20 md:py-28 px-5 bg-zinc-100">
       <div className="max-w-4xl mx-auto text-center">
         <p className="mb-3 text-xs uppercase font-medium">Technologies I Use</p>
         <h2 className="text-4xl text-zinc-800 font-serif font-bold sm:text-5xl">
