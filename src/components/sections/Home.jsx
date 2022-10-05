@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 export function Home() {
   return (
     <section id="home" className="relative w-full h-screen flex items-center justify-center">
@@ -7,10 +9,10 @@ export function Home() {
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 mx-auto text-center">
-        <a href="#work" className="inline-block w-5">
+        <Link to="work" className="inline-block w-5">
           <span className="relative block -rotate-90 mb-2 -left-[3px]">scroll</span>
           <span className="block w-[2px] h-5 bg-zinc-100 mx-auto"></span>
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "../ui/Link";
+import { LinkScroll } from "../ui/LinkScroll"; 
 import { Logo } from "../ui/Logo";
 
 export function NavBar() {
@@ -36,19 +36,19 @@ export function NavBar() {
         </a>
         <ul className="flex gap-10">
           <li>
-            <Link href="#home">Home</Link>
+            <LinkScroll to="home" href="#home">Home</LinkScroll>
           </li>
           <li>
-            <Link href="#work">Work</Link>
+            <LinkScroll to="work" href="#work">Work</LinkScroll>
           </li>
           <li>
-            <Link href="#projects">Projects</Link>
+            <LinkScroll to="projects" href="#projects">Projects</LinkScroll>
           </li>
           <li>
-            <Link href="#tech">Skill Set</Link>
+            <LinkScroll to="tech" href="#tech">Skill Set</LinkScroll>
           </li>
           <li>
-            <Link href="#about">About</Link>
+            <LinkScroll to="about" href="#about">About</LinkScroll>
           </li>
         </ul>
       </nav>
