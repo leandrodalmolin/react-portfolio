@@ -3,14 +3,14 @@ import { About } from './components/sections/About';
 import { Home } from './components/sections/Home';
 import { Projects } from './components/sections/Projects';
 import { Tech } from './components/sections/Tech';
-import { Work } from './components/sections/Work';
+import { WorkAlternate } from './components/sections/WorkAlternate';
 
 function App() {
   return (
     <>
       <NavBar />
       <Home />
-      <Work />
+      <WorkAlternate />
       <Projects />
       <Tech />
       <About />
