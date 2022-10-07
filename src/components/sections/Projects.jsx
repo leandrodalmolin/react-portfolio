@@ -22,7 +22,7 @@ export function Projects() {
             </p>
             <p>
               <Link
-                className="flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-2"
                 href="https://github.com/leandrodalmolin/url-shortening-front"
                 target="_blank"
               >
@@ -32,7 +32,7 @@ export function Projects() {
             </p>
             <p>
               <Link
-                className="flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-2"
                 href="https://github.com/leandrodalmolin/url-shortening-server"
                 target="_blank"
               >
@@ -42,7 +42,7 @@ export function Projects() {
             </p>
             <p>
               <Link 
-                className="flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-2"
                 href="https://shrtl.netlify.app"
                 target="_blank"
               >
@@ -58,7 +58,7 @@ export function Projects() {
             </p>
             <p>
               <Link
-                className="flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-2"
                 href="https://github.com/leandrodalmolin/cart-ui-challenge"
                 target="_blank"
               >
@@ -68,7 +68,7 @@ export function Projects() {
             </p>
             <p>
               <Link 
-                className="flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-2"
                 href="https://cart-ui-chlg.netlify.app/"
                 target="_blank"
               >

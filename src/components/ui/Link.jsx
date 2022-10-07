@@ -1,8 +1,10 @@
 export function Link(props) {
+  const { extraClasses, ...rest } = props; 
+
   return (
     <a
-      {...props}
-      className={`hover:text-white transition-colors ${props.className}`}
+      className={`hover:text-white transition-colors ${extraClasses ?? ""}`}
+      {...rest}
     >
       {props.children}
     </a>

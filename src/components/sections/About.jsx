@@ -32,7 +32,7 @@ export function About() {
         <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg">
           <li>
             <Link
-              className="flex items-center gap-2"
+              extraClasses="flex inline-flex items-center gap-2"
               href={cvPdf}
               target="_blank"
             >
@@ -41,7 +41,7 @@ export function About() {
           </li>
           <li>
             <Link
-              className="flex items-center gap-2"
+              extraClasses="flex inline-flex items-center gap-2"
               href="https://www.linkedin.com/in/leandrodalmolin/"
               target="_blank"
             >
@@ -50,7 +50,7 @@ export function About() {
           </li>
           <li>
             <Link
-              className="flex items-center gap-2"
+              extraClasses="flex inline-flex items-center gap-2"
               href="https://www.github.com/leandrodalmolin"
               target="_blank"
             >
@@ -59,7 +59,7 @@ export function About() {
           </li>
           <li>
             <Link
-              className="flex items-center gap-2"
+              extraClasses="flex inline-flex items-center gap-2"
               href="mailto:leandro.swk@hotmail.com"
             >
               <FaEnvelope className="inline-block" /> Email

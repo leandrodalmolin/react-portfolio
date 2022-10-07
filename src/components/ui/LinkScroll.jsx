@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 
 export function LinkScroll(props) {
-  const { extraClasses } = props;
+  const { extraClasses, ...rest } = props;
 
   return (
     <Link
@@ -10,7 +10,7 @@ export function LinkScroll(props) {
       spy={true}
       activeClass="text-white"
       className={`hover:text-white transition-colors ${extraClasses ?? ""}`}
-      {...props}
+      {...rest}
     >
       {props.children}
     </Link>
