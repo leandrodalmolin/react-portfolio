@@ -9,7 +9,7 @@ export function Card(props) {
       <h2 className="mb-5 md:mb-7 text-2xl text-white font-bold">
         {title}
       </h2>
-      <div className="md:duration-[1s] md:ease-[cubic-bezier(0.65, 0, 0.35, 1)] md:transition-all md:invisible md:max-h-0 md:opacity-0 group-hover:md:visible group-hover:md:max-h-[800px] group-hover:md:opacity-100">
+      <div className="md:duration-[1.5s] md:ease-[cubic-bezier(0.65, 0, 0.35, 1)] md:transition-all md:invisible md:max-h-0 md:opacity-0 group-hover:md:visible group-hover:md:max-h-[800px] group-hover:md:opacity-100">
         <p className="mb-6 text-white/60 text-sm leading-relaxed">{description}</p>
         <p className="text-sm">
           <Link 

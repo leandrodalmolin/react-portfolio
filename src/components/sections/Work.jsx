@@ -52,7 +52,7 @@ export function Work() {
           <p className="mb-3 text-xs uppercase font-medium sm:mb-5">
             © Artworking/Golfworking
           </p>
-          <h2 className="text-zinc-800 text-4xl font-serif font-bold leading-[1.1] transition-colors duration-500 sm:text-5xl">
+          <h2 className="text-zinc-800 text-4xl font-serif font-bold leading-[1.1] sm:text-5xl">
             Selected Work
           </h2>
         </div>

@@ -1,0 +1,17 @@
+.sidebar-enter {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+.sidebar-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 400ms, transform 400ms;
+}
+.sidebar-exit {
+  opacity: 1;
+}
+.sidebar-exit-active {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+  transition:  opacity 400ms, transform 400ms;
+}
