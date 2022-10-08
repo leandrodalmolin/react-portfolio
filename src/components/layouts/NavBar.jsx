@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
+import { CSSTransition } from "react-transition-group";
 import { Logo } from "../ui/Logo";
 import { Menu } from "../ui/Menu";
 import { SideBar } from "./SideBar";
-import { CSSTransition } from "react-transition-group";
+import { LinkScroll } from "../ui/LinkScroll";
+import { FadeIn } from "../utils/FadeIn";
 
 import "./NavBar.css";
-import { LinkScroll } from "../ui/LinkScroll";
 
 export function NavBar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -52,13 +53,19 @@ export function NavBar() {
     <>
       <div className={`fixed w-full z-20 transition-[top] duration-700 bg-zinc-900 backdrop-filter backdrop-blur-sm bg-opacity-80 -top-full ${visible ? "top-0" : ""} ${scroll ? "navbar-scroll" : ""}`}>
         <nav className="max-w-7xl mx-auto px-5 py-5 pl-7 md:p-7 md:pl-7 flex items-center justify-between transition-[padding] navbar-scroll:py-2 navbar-scroll:pl-7 navbar-scroll:pr-5 navbar-scroll:md:pr-7">
-          <LinkScroll to="home" href="#home" onClick={handleCloseSidebar}>
-            <Logo extraClasses="transition-[font-size] navbar-scroll:text-[2rem]" />
-          </LinkScroll>
-          <div className="md:hidden">
-            <Hamburger size={28} distance="sm" toggled={isSidebarOpen} toggle={setIsSidebarOpen} />
-          </div>
-          <Menu className="gap-10 hidden md:flex" />
+          <FadeIn delay="1000">
+            <LinkScroll to="home" href="#home" onClick={handleCloseSidebar}>
+              <Logo extraClasses="transition-[font-size] navbar-scroll:text-[2rem]" />
+            </LinkScroll>
+          </FadeIn>
+          <FadeIn delay="1500">
+            <div className="md:hidden">
+              <Hamburger size={28} distance="sm" toggled={isSidebarOpen} toggle={setIsSidebarOpen} />
+            </div>
+          </FadeIn>
+          <FadeIn delay="1500">
+            <Menu className="gap-10 hidden md:flex" />
+          </FadeIn>
         </nav>
       </div>
 

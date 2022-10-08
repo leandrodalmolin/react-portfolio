@@ -8,6 +8,7 @@ import spcImage from "../../assets/images/work/spc-work.jpg";
 import { Wrapper } from "../abstracts/Wrapper";
 import { Section } from "../abstracts/Section";
 import { Heading } from "../ui/Heading";
+import { FadeInScroll } from "../utils/FadeInScroll";
 
 const WORK_DATA = [
   {
@@ -56,7 +57,9 @@ export function Work() {
   return (
     <Section theme="light" id="work">
       <Wrapper type="xl" extraClasses="text-center">
-        <Heading text="Selected Work" subText="© Artworking/Golfworking" />
+        <FadeInScroll>
+          <Heading text="Selected Work" subText="© Artworking/Golfworking" />
+        </FadeInScroll>
         <div className="grid md:grid-cols-4 gap-5 md:gap-10">
           {WORK_DATA.map((work, index) => {
             const lastItem = WORK_DATA.length - 1 === index;
@@ -69,13 +72,15 @@ export function Work() {
                 className={`relative rounded-md overflow-hidden md:pb-[100%] lg:pb-[70%] md:h-0 ${centerWidowClasses}`}
               >
                 <div className="md:absolute md:top-0 md:left-0 md:w-full md:h-full">
-                  <Card
-                    extraClasses={work.bgColor}
-                    title={work.title}
-                    description={work.description}
-                    url={work.url}
-                    imageSrc={work.imageSrc}
-                  />
+                  <FadeInScroll>
+                    <Card
+                      extraClasses={work.bgColor}
+                      title={work.title}
+                      description={work.description}
+                      url={work.url}
+                      imageSrc={work.imageSrc}
+                    />
+                  </FadeInScroll>
                 </div>
               </div>
             );
