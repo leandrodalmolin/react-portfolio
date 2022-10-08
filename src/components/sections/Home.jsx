@@ -14,7 +14,7 @@ export function Home() {
       <Wrapper type="md" extraClasses="text-center">
         <FadeInScroll>
           <FadeIn delay="500">
-            <h1 className="text-3xl text-white font-bold mb-5 font-serif sm:text-4xl sm:mb-8">
+            <h1 className="text-2xl text-white font-bold mb-5 font-serif sm:text-4xl sm:mb-8">
               Hi, I'm Leandro!
             </h1>
             <p className="text-xl sm:text-3xl">

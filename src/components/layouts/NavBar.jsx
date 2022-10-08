@@ -58,14 +58,18 @@ export function NavBar() {
               <Logo extraClasses="transition-[font-size] navbar-scroll:text-[2rem]" />
             </LinkScroll>
           </FadeIn>
-          <FadeIn delay="1500">
-            <div className="md:hidden">
+          
+          <div className="md:hidden">
+            <FadeIn delay="1500">
               <Hamburger size={28} distance="sm" toggled={isSidebarOpen} toggle={setIsSidebarOpen} />
-            </div>
-          </FadeIn>
-          <FadeIn delay="1500">
-            <Menu className="gap-10 hidden md:flex" />
-          </FadeIn>
+            </FadeIn>
+          </div>
+          
+          <div className="hidden md:block">
+            <FadeIn delay="1500">
+              <Menu className="flex gap-10" />
+            </FadeIn>
+          </div>
         </nav>
       </div>
 
