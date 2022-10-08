@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 export function Home() {
   return (
-    <section id="home" className="relative w-full h-screen flex items-center justify-center">
+    <section id="home" className="relative w-full h-[34rem] md:h-screen flex items-center justify-center">
       <div className="max-w-3xl mx-5 text-center">
         <h1 className="text-3xl text-white font-bold mb-5 font-serif sm:text-4xl sm:mb-8">Hi, I'm Leandro!</h1>
         <p className="text-xl sm:text-3xl">A web developer focused on creating interactive digital experiences on the web.</p>
