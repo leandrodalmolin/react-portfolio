@@ -9,7 +9,7 @@ export function LinkScroll(props) {
       duration={1500}
       spy={true}
       activeClass="text-white"
-      className={`hover:text-white transition-colors ${extraClasses ?? ""}`}
+      className={`hover:text-white theme-light:hover:text-zinc-900 transition-colors ${extraClasses ?? ""}`}
       {...rest}
     >
       {props.children}

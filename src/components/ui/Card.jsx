@@ -5,7 +5,7 @@ export function Card(props) {
   const { title, description, url, imageSrc, extraClasses } = props;
 
   return (
-    <div className={`group px-[10%] pt-[10%] md:pt-[8%] pb-0 bg-zinc-800 ${extraClasses ?? ""}`}>
+    <div className={`group text-left px-[10%] pt-[10%] md:pt-[8%] pb-0 bg-zinc-800 ${extraClasses ?? ""}`}>
       <h2 className="mb-4 md:mb-7 text-2xl text-white font-bold">
         {title}
       </h2>

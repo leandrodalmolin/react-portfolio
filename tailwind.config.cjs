@@ -15,6 +15,8 @@ module.exports = {
   },
   plugins: [
     plugin(function({ addVariant }) {
+      addVariant('theme-light', ['&.theme-light', '.theme-light &'])
+      addVariant('theme-dark', ['&.theme-dark', '.theme-dark &'])
       addVariant('navbar-scroll', ['&.navbar-scroll', '.navbar-scroll &'])
     })
   ],
