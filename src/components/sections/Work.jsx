@@ -31,6 +31,7 @@ const WORK_DATA = [
       "One of the premier links courses in the World, host to eleven Open Championships, two Ryder Cups and numerous other major tournaments.",
     url: "https://www.royallytham.org/",
     imageSrc: rlImage,
+    placeholderImageSrc: rlPhImage,
     bgColor: "bg-[#111b36]",
   },
   {

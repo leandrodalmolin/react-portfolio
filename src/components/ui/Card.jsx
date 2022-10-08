@@ -1,4 +1,3 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "./Link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
@@ -27,12 +26,8 @@ export function Card(props) {
         </p>
       </div>
       <div className="mt-10 md:mt-0 group-hover:md:mt-10 md:ease-[cubic-bezier(0.65, 0, 0.35, 1)] md:duration-[1.5s] md:transition-[margin] border-white/10 border-x-8 border-t-8 rounded-tl-md rounded-tr-md overflow-hidden">
-        <LazyLoadImage
-          className="block"
-          src={imageSrc}
-          placeholderSrc={placeholderImageSrc}
-          alt={title}
-        />
+        {/* TODO: Add lazy loading to image */}
+        <img src={imageSrc} alt={title} />
       </div>
     </div>
   );
