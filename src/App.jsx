@@ -10,10 +10,10 @@ function App() {
     <>
       <NavBar />
       <Home />
-      <About />
-      <Tech />
       <Work />
       <Projects />
+      <Tech />
+      <About />
     </>
   )
 }

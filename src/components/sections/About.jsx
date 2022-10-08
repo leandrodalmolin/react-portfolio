@@ -8,10 +8,10 @@ import { Heading } from "../ui/Heading";
 
 export function About() {
   return (
-    <Section theme="light" id="about" extraClasses="flex items-center min-h-screen">
+    <Section theme="dark" id="about" extraClasses="flex items-center min-h-screen">
       <Wrapper extraClasses="text-center">
         <Heading text="About Me" subText="Who am I?" />
-        <p className="font-bold text-zinc-800 mb-5 text-lg leading-snug sm:leading-normal sm:text-xl">
+        <p className="font-bold text-zinc-300 theme-light:text-zinc-800 mb-5 text-lg leading-snug sm:leading-normal sm:text-xl">
           <strong>
             My name is Leandro Dal Molin.<br />A full-stack developer mostly focused on the front-end.
           </strong>
@@ -29,10 +29,10 @@ export function About() {
           Artworking/Golfworking.
         </p>
 
-        <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg text-zinc-500">
+        <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg theme-light:text-zinc-500">
           <li>
             <Link
-              extraClasses="flex inline-flex items-center gap-2 hover:text-zinc-900"
+              extraClasses="flex inline-flex items-center gap-2"
               href={cvPdf}
               target="_blank"
             >
@@ -41,7 +41,7 @@ export function About() {
           </li>
           <li>
             <Link
-              extraClasses="flex inline-flex items-center gap-2 hover:text-zinc-900"
+              extraClasses="flex inline-flex items-center gap-2"
               href="https://www.linkedin.com/in/leandrodalmolin/"
               target="_blank"
             >
@@ -50,7 +50,7 @@ export function About() {
           </li>
           <li>
             <Link
-              extraClasses="flex inline-flex items-center gap-2 hover:text-zinc-900"
+              extraClasses="flex inline-flex items-center gap-2"
               href="https://www.github.com/leandrodalmolin"
               target="_blank"
             >
@@ -59,7 +59,7 @@ export function About() {
           </li>
           <li>
             <Link
-              extraClasses="flex inline-flex items-center gap-2 hover:text-zinc-900"
+              extraClasses="flex inline-flex items-center gap-2"
               href="mailto:leandro.swk@hotmail.com"
             >
               <FaEnvelope className="inline-block" /> Email
