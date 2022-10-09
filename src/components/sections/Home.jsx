@@ -43,7 +43,7 @@ export function Home() {
           href="#work"
           className="inline-block w-5"
         >
-          <span className="relative block -rotate-90 mb-2 -left-[3px]">
+          <span className="relative block -rotate-90 mb-2 -left-[2px]">
             scroll
           </span>
           <span className="block w-[2px] h-5 bg-zinc-100 mx-auto"></span>
