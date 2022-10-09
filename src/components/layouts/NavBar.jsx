@@ -41,7 +41,7 @@ export function NavBar() {
 
   return (
     <>
-      <div className={`fixed top-0 w-full z-20 duration-700 ${isSidebarOpen ? "px-2 py-1" : "bg-zinc-900 backdrop-filter backdrop-blur-sm bg-opacity-80"}  ${isScrolling ? "navbar-scroll" : ""}`}>
+      <div className={`fixed top-0 w-full z-20 duration-700 ${isSidebarOpen ? "p-2" : "bg-zinc-900 backdrop-filter backdrop-blur-sm bg-opacity-80"}  ${isScrolling ? "navbar-scroll" : ""}`}>
         <Wrapper type="2xl">
           <nav className="flex items-center justify-between py-5 md:py-7 duration-700 transition-[padding] navbar-scroll:py-1">
             <FadeIn delay="1000">
