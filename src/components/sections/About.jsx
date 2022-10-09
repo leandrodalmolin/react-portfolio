@@ -39,7 +39,7 @@ export function About() {
           <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg theme-light:text-zinc-500">
             <li>
               <Link
-                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-sm sm:text-base"
+                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-base sm:text-lg"
                 href={cvPdf}
                 target="_blank"
               >
@@ -48,7 +48,7 @@ export function About() {
             </li>
             <li>
               <Link
-                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-sm sm:text-base"
+                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-base sm:text-lg"
                 href="https://www.linkedin.com/in/leandrodalmolin/"
                 target="_blank"
               >
@@ -57,7 +57,7 @@ export function About() {
             </li>
             <li>
               <Link
-                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-sm sm:text-base"
+                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-base sm:text-lg"
                 href="https://www.github.com/leandrodalmolin"
                 target="_blank"
               >
@@ -66,7 +66,7 @@ export function About() {
             </li>
             <li>
               <Link
-                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-sm sm:text-base"
+                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-base sm:text-lg"
                 href="mailto:leandro.swk@hotmail.com"
               >
                 <FaEnvelope className="inline-block" /> Email
