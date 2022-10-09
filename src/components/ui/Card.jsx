@@ -17,7 +17,7 @@ export function Card(props) {
         </p>
         <p className="text-sm">
           <Link
-            extraClasses="flex inline-flex items-center gap-2 border-b-2 border-white/20 text-white/60"
+            extraClasses="flex inline-flex items-center gap-2 border-b-2 border-white/20 text-white/60 theme-light:hover:text-white"
             href={url}
           >
             Visit Website

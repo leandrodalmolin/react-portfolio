@@ -37,8 +37,6 @@ export function About() {
             websites for local businesses and golf clubs throughout the UK at
             Artworking/Golfworking.
           </p>
-        </FadeInScroll>
-        <FadeInScroll>
           <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg theme-light:text-zinc-500">
             <li>
               <Link
