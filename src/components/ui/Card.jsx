@@ -6,7 +6,7 @@ export function Card(props) {
 
   return (
     <div
-      className={`group text-left px-[10%] pt-[10%] md:pt-[8%] pb-0 bg-zinc-800 ${
+      className={`group text-left px-[10%] pt-[10%] md:pt-[8%] pb-0 bg-zinc-800 rounded-md ${
         extraClasses ?? ""
       }`}
     >

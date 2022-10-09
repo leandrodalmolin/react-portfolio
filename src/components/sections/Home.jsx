@@ -9,16 +9,15 @@ export function Home() {
     <Section
       theme="dark"
       id="home"
-      extraClasses="relative h-[34rem] md:h-screen flex items-center justify-center"
+      extraClasses="relative h-[40rem] md:h-screen flex items-center justify-center"
     >
-      <Wrapper type="md" extraClasses="text-center">
+      <Wrapper type="xl" extraClasses="text-center">
         <FadeIn delay="500">
-          <h1 className="text-2xl text-white font-bold mb-5 font-serif sm:text-4xl sm:mb-8">
+          <h1 className="text-2xl text-white font-bold mb-5 font-serif sm:text-4xl md:text-5xl sm:mb-8">
             Hi, I'm Leandro!
           </h1>
-          <p className="text-xl sm:text-3xl">
-            A web developer focused on creating interactive digital
-            experiences on the web.
+          <p className="text-xl sm:text-3xl md:text-4xl">
+            A web developer focused on creating interactive experiences on the web.
           </p>
         </FadeIn>
       </Wrapper>

@@ -8,27 +8,12 @@ import { LinkScroll } from "../ui/LinkScroll";
 import { FadeIn } from "../utils/FadeIn";
 
 import "./NavBar.css";
+import { Wrapper } from "../abstracts/Wrapper";
 
 export function NavBar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [scroll, setScroll] = useState(false);
-  const [visible, setVisible] = useState(true);
+  const [isScrolling, setIsScrolling] = useState(false);
   const sidebarRef = useRef(null);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-
-    setScroll(currentScrollPos > 0);
-
-    if (currentScrollPos > prevScrollPos) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-
-    setPrevScrollPos(currentScrollPos);
-  };
 
   const handleCloseSidebar = () => {
     setIsSidebarOpen(false);
@@ -44,6 +29,11 @@ export function NavBar() {
     body.classList.remove("overflow-hidden");
   }
 
+  const handleScroll = () => {
+    const threshold = 300;
+    setIsScrolling(window.scrollY > threshold);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -51,26 +41,28 @@ export function NavBar() {
 
   return (
     <>
-      <div className={`fixed w-full z-20 transition-[top] duration-700 bg-zinc-900 backdrop-filter backdrop-blur-sm bg-opacity-80 -top-full ${visible ? "top-0" : ""} ${scroll ? "navbar-scroll" : ""}`}>
-        <nav className="max-w-7xl mx-auto px-5 py-5 pl-7 md:p-7 md:pl-7 flex items-center justify-between transition-[padding] navbar-scroll:py-2 navbar-scroll:pl-7 navbar-scroll:pr-5 navbar-scroll:md:pr-7">
-          <FadeIn delay="1000">
-            <LinkScroll to="home" href="#home" onClick={handleCloseSidebar}>
-              <Logo extraClasses="transition-[font-size] navbar-scroll:text-[2rem]" />
-            </LinkScroll>
-          </FadeIn>
-          
-          <div className="md:hidden">
-            <FadeIn delay="1500">
-              <Hamburger size={28} distance="sm" toggled={isSidebarOpen} toggle={setIsSidebarOpen} />
+      <div className={`fixed top-0 w-full z-20 duration-700 ${isSidebarOpen ? "px-2 py-1" : "bg-zinc-900 backdrop-filter backdrop-blur-sm bg-opacity-80"}  ${isScrolling ? "navbar-scroll" : ""}`}>
+        <Wrapper type="2xl">
+          <nav className="flex items-center justify-between py-5 md:py-7 duration-700 transition-[padding] navbar-scroll:py-1">
+            <FadeIn delay="1000">
+              <LinkScroll to="home" href="#home" onClick={handleCloseSidebar}>
+                <Logo extraClasses="duration-700 transition-[font-size] navbar-scroll:text-[1.8rem]" />
+              </LinkScroll>
             </FadeIn>
-          </div>
-          
-          <div className="hidden md:block">
-            <FadeIn delay="1500">
-              <Menu className="flex gap-10" />
-            </FadeIn>
-          </div>
-        </nav>
+            
+            <div className="md:hidden -mr-2">
+              <FadeIn delay="1500">
+                <Hamburger color="#d4d4d8" size={28} distance="sm" toggled={isSidebarOpen} toggle={setIsSidebarOpen} />
+              </FadeIn>
+            </div>
+            
+            <div className="hidden md:block">
+              <FadeIn delay="1500">
+                <Menu className="flex gap-10" />
+              </FadeIn>
+            </div>
+          </nav>
+        </Wrapper>
       </div>
 
       <CSSTransition

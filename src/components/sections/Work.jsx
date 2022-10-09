@@ -66,11 +66,11 @@ const WORK_DATA = [
 export function Work() {
   return (
     <Section theme="light" id="work">
-      <Wrapper type="xl" extraClasses="text-center">
+      <Wrapper type="2xl" extraClasses="text-center">
         <FadeInScroll>
           <Heading text="Selected Work" subText="© Artworking/Golfworking" />
         </FadeInScroll>
-        <div className="grid md:grid-cols-4 gap-5 md:gap-10">
+        <div className="grid md:grid-cols-4 gap-7 md:gap-10">
           {WORK_DATA.map((work, index) => {
             const lastItem = WORK_DATA.length - 1 === index;
             const centerWidowClasses = lastItem

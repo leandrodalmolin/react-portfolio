@@ -3,8 +3,11 @@ export function Wrapper(props) {
   let typeClasses = "";
 
   switch (type) {
-    case "xl":
+    case "2xl":
       typeClasses = "max-w-7xl";
+      break;
+    case "xl":
+      typeClasses = "max-w-5xl";
       break;
     case "lg":
       typeClasses = "max-w-4xl";
@@ -18,7 +21,7 @@ export function Wrapper(props) {
   }
 
   return (
-    <div className={`${typeClasses} mx-auto px-6 ${extraClasses ?? ""}`} {...rest}>
+    <div className={`${typeClasses} mx-auto px-7 md:px-12 ${extraClasses ?? ""}`} {...rest}>
       {children}
     </div>
   );
