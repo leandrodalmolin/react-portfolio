@@ -19,7 +19,8 @@ export function Card(props) {
           <Link
             extraClasses="flex inline-flex items-center gap-2 border-b-2 border-white/20 text-white/60 theme-light:hover:text-white theme-light:hover:border-white/40"
             href={url}
-            target="_black"
+            target="_blank"
+            rel="nofollow noreferrer noopener"
           >
             Visit Website
             <FaLongArrowAltRight />

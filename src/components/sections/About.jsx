@@ -34,7 +34,15 @@ export function About() {
             projects (software and web) and finally moved from Brazil to England
             in 2017, where I've been working as a web developer building
             websites for local businesses and golf clubs throughout the UK at{" "}
-            <Link href="https://www.golfworking.co.uk" target="_blank" extraClasses="border-b-2 border-white/10 hover:border-white/30">Artworking/Golfworking</Link>.
+            <Link
+              href="https://www.golfworking.co.uk"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              extraClasses="border-b-2 border-white/10 hover:border-white/30"
+            >
+              Artworking/Golfworking
+            </Link>
+            .
           </p>
           <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg theme-light:text-zinc-500">
             <li>
