@@ -14,7 +14,7 @@ export function Home() {
     >
       <Wrapper type="xl" extraClasses="text-center">
         <FadeIn delay="500">
-          <h1 className="text-2xl text-white font-bold mt-8 mb-5 font-serif sm:text-4xl md:text-5xl sm:mb-8">
+          <h1 className="text-2xl text-white font-bold md:mt-8 mb-5 font-serif sm:text-4xl md:text-5xl sm:mb-8">
             Hi, I'm Leandro!
           </h1>
           <p className="text-xl sm:text-3xl md:text-4xl">
