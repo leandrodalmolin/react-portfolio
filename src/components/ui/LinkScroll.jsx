@@ -1,10 +1,10 @@
-import { Link } from "react-scroll";
+import { Link as ReactScrollLink } from "react-scroll";
 
 export function LinkScroll(props) {
   const { extraClasses, ...rest } = props;
 
   return (
-    <Link
+    <ReactScrollLink
       smooth="easeOutQuart"
       duration={1500}
       spy={true}
@@ -13,6 +13,6 @@ export function LinkScroll(props) {
       {...rest}
     >
       {props.children}
-    </Link>
+    </ReactScrollLink>
   );
 }

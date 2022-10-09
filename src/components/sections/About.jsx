@@ -1,11 +1,10 @@
 import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "../ui/Link";
 import { Wrapper } from "../abstracts/Wrapper";
-
-import cvPdf from "../../assets/docs/leandro-dal-molin-cv.pdf";
 import { Section } from "../abstracts/Section";
 import { Heading } from "../ui/Heading";
 import { FadeInScroll } from "../utils/FadeInScroll";
+import cvPdf from "../../assets/docs/leandro-dal-molin-cv.pdf";
 
 export function About() {
   return (
@@ -34,13 +33,13 @@ export function About() {
             Since then, I've graduated, had the chance to work on a variety of
             projects (software and web) and finally moved from Brazil to England
             in 2017, where I've been working as a web developer building
-            websites for local businesses and golf clubs throughout the UK at
-            Artworking/Golfworking.
+            websites for local businesses and golf clubs throughout the UK at{" "}
+            <Link href="https://www.golfworking.co.uk" target="_blank" extraClasses="border-b-2 border-white/10 hover:border-white/30">Artworking/Golfworking</Link>.
           </p>
           <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg theme-light:text-zinc-500">
             <li>
               <Link
-                extraClasses="flex inline-flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-sm sm:text-base"
                 href={cvPdf}
                 target="_blank"
               >
@@ -49,7 +48,7 @@ export function About() {
             </li>
             <li>
               <Link
-                extraClasses="flex inline-flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-sm sm:text-base"
                 href="https://www.linkedin.com/in/leandrodalmolin/"
                 target="_blank"
               >
@@ -58,7 +57,7 @@ export function About() {
             </li>
             <li>
               <Link
-                extraClasses="flex inline-flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-sm sm:text-base"
                 href="https://www.github.com/leandrodalmolin"
                 target="_blank"
               >
@@ -67,7 +66,7 @@ export function About() {
             </li>
             <li>
               <Link
-                extraClasses="flex inline-flex items-center gap-2"
+                extraClasses="flex inline-flex items-center gap-1 sm:gap-2 text-zinc-300 text-sm sm:text-base"
                 href="mailto:leandro.swk@hotmail.com"
               >
                 <FaEnvelope className="inline-block" /> Email

@@ -17,8 +17,9 @@ export function Card(props) {
         </p>
         <p className="text-sm">
           <Link
-            extraClasses="flex inline-flex items-center gap-2 border-b-2 border-white/20 text-white/60 theme-light:hover:text-white"
+            extraClasses="flex inline-flex items-center gap-2 border-b-2 border-white/20 text-white/60 theme-light:hover:text-white theme-light:hover:border-white/40"
             href={url}
+            target="_black"
           >
             Visit Website
             <FaLongArrowAltRight />

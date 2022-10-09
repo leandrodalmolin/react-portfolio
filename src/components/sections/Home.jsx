@@ -1,8 +1,9 @@
-import { Link } from "react-scroll";
+import { Link as ReactScrollLink } from "react-scroll";
 import { Section } from "../abstracts/Section";
 import { Wrapper } from "../abstracts/Wrapper";
+import { Link } from "../ui/Link";
 import { FadeIn } from "../utils/FadeIn";
-import { FadeInScroll } from "../utils/FadeInScroll";
+import cvPdf from "../../assets/docs/leandro-dal-molin-cv.pdf";
 
 export function Home() {
   return (
@@ -13,17 +14,28 @@ export function Home() {
     >
       <Wrapper type="xl" extraClasses="text-center">
         <FadeIn delay="500">
-          <h1 className="text-2xl text-white font-bold mb-5 font-serif sm:text-4xl md:text-5xl sm:mb-8">
+          <h1 className="text-2xl text-white font-bold mt-8 mb-5 font-serif sm:text-4xl md:text-5xl sm:mb-8">
             Hi, I'm Leandro!
           </h1>
           <p className="text-xl sm:text-3xl md:text-4xl">
-            A web developer focused on creating interactive experiences on the web.
+            A web developer focused on creating interactive experiences on the
+            web.
+          </p>
+          <p>
+            <Link
+              type="border"
+              href={cvPdf}
+              target="_blank"
+              extraClasses="inline-block mt-7 md:mt-10"
+            >
+              Curriculum Vitae
+            </Link>
           </p>
         </FadeIn>
       </Wrapper>
 
       <div className="absolute bottom-0 left-0 right-0 mx-auto text-center">
-        <Link
+        <ReactScrollLink
           smooth="easeOutQuart"
           duration={1500}
           spy={true}
@@ -35,7 +47,7 @@ export function Home() {
             scroll
           </span>
           <span className="block w-[2px] h-5 bg-zinc-100 mx-auto"></span>
-        </Link>
+        </ReactScrollLink>
       </div>
     </Section>
   );
