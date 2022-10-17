@@ -15,7 +15,7 @@ export function Projects() {
         <FadeInScroll>
           <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 text-left">
             <div className="bg-zinc-800 rounded-md p-7">
-              <h2 className="text-xl text-white font-bold mb-3">
+              <h2 className="text-xl text-zinc-100 font-bold mb-3">
                 URL Shortener
               </h2>
               <p className="mb-4">
@@ -55,7 +55,7 @@ export function Projects() {
             </div>
 
             <div className="bg-zinc-800 rounded-md p-7">
-              <h2 className="text-xl text-white font-bold mb-3">Personal Website</h2>
+              <h2 className="text-xl text-zinc-100 font-bold mb-3">Personal Website</h2>
               <p className="mb-4">Feature some of my work, side projects and a little about me. Built with <span className="text-zinc-300">React</span>, <span className="text-zinc-300">Tailwind CSS</span> and <span className="text-zinc-300">Vite</span>.</p>
               <p>
                 <Link

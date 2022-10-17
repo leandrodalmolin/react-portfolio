@@ -38,7 +38,7 @@ export function About() {
               href="https://www.golfworking.co.uk"
               target="_blank"
               rel="nofollow noreferrer noopener"
-              extraClasses="border-b-2 border-white/10 hover:border-white/30"
+              extraClasses="border-b-2 border-zinc-100/10 hover:border-zinc-100/30"
             >
               Artworking/Golfworking
             </Link>

@@ -8,8 +8,8 @@ export function LinkScroll(props) {
       smooth="easeOutQuart"
       duration={1500}
       spy={true}
-      activeClass="text-white"
-      className={`hover:text-white theme-light:hover:text-zinc-900 transition-colors ${extraClasses ?? ""}`}
+      activeClass="text-zinc-100"
+      className={`hover:text-zinc-100 theme-light:hover:text-zinc-900 transition-colors ${extraClasses ?? ""}`}
       {...rest}
     >
       {props.children}

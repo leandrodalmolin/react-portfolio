@@ -2,10 +2,10 @@ export function Link(props) {
   const { type = "default", extraClasses, ...rest } = props;
   
   // Default
-  let variationClasses = "hover:text-white theme-light:hover:text-zinc-900";
+  let variationClasses = "hover:text-zinc-100 theme-light:hover:text-zinc-900";
 
   if (type === "border") {
-    variationClasses = "font-bold border-2 text-zinc-300 border-white/20 rounded-md text-sm px-6 py-2 sm:text-base sm:px-5 hover:border-white hover:bg-white hover:text-zinc-900";
+    variationClasses = "font-bold border-2 text-zinc-300 border-zinc-100/20 rounded-md text-sm px-6 py-2 sm:text-base sm:px-5 hover:border-zinc-100 hover:bg-zinc-100 hover:text-zinc-900";
   }
 
   return (
