@@ -1,17 +1,14 @@
-# Personal Website
+# Portfolio v1
 
-Feature some of my work, side projects and a little about me.
+Old version of my portfolio that can still be accessed via [leandrodev.netlify.app](https://leandrodev.netlify.app).
 
-## To do
-
-- Refactor components
-- Image lazy-loading
-- Fetch GitHub pinned projects via API
-- Manage state with Redux
-- NextJS
-
-## Built with
+**Built with:**
 
 - [Vite](https://vitejs.dev/) - Build tool
 - [React](https://reactjs.org/) - JS library
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+
+**For the latest version of my portfolio see:**
+
+- [Live site](https://leandrodm.vercel.app/)
+- [Repository](https://github.com/leandrodalmolin/nextjs-portfolio)
