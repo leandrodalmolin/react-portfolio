@@ -1,10 +1,10 @@
-import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from "react-icons/fa";
-import { Link } from "../ui/Link";
-import { Wrapper } from "../abstracts/Wrapper";
-import { Section } from "../abstracts/Section";
-import { Heading } from "../ui/Heading";
-import { FadeInScroll } from "../utils/FadeInScroll";
-import cvPdf from "../../assets/docs/leandro-dal-molin-cv.pdf";
+import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { Link } from '../ui/Link'
+import { Wrapper } from '../abstracts/Wrapper'
+import { Section } from '../abstracts/Section'
+import { Heading } from '../ui/Heading'
+import { FadeInScroll } from '../utils/FadeInScroll'
+import cvPdf from '../../assets/docs/leandro-dal-molin-cv.pdf'
 
 export function About() {
   return (
@@ -21,7 +21,7 @@ export function About() {
           <p className="font-bold text-zinc-300 theme-light:text-zinc-800 mb-5 text-lg leading-snug sm:leading-normal sm:text-xl">
             <strong>
               My name is Leandro Dal Molin.
-              <br />A full-stack developer mostly focused on the front-end.
+              <br />A web developer focused on the front-end.
             </strong>
           </p>
 
@@ -33,16 +33,7 @@ export function About() {
             Since then, I've graduated, had the chance to work on a variety of
             projects (software and web) and finally moved from Brazil to England
             in 2017, where I've been working as a web developer building
-            websites for local businesses and golf clubs throughout the UK at{" "}
-            <Link
-              href="https://www.golfworking.co.uk"
-              target="_blank"
-              rel="nofollow noreferrer noopener"
-              extraClasses="border-b-2 border-zinc-100/10 hover:border-zinc-100/30"
-            >
-              Artworking/Golfworking
-            </Link>
-            .
+            websites for local businesses throughout the UK.
           </p>
           <ul className="flex flex-wrap justify-center mt-11 gap-x-4 gap-y-2 sm:gap-x-7 sm:text-lg theme-light:text-zinc-500">
             <li>
@@ -84,5 +75,5 @@ export function About() {
         </FadeInScroll>
       </Wrapper>
     </Section>
-  );
+  )
 }
